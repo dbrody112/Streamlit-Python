@@ -48,7 +48,7 @@ st.write(pdk.bindings.deck.Deck(map_style = "mapbox://styles/mapbox/light-v9", i
     'longitude': midpoint[1],
     'zoom': 11,
     'pitch':50
-},mapbox_key = 'pk.eyJ1IjoiZGJyb2R5MTEyIiwiYSI6ImNrOWdnZnE5NDBjdjYzbGxpZXRuMzIxOHMifQ.evx5PzKb1UAAn-_711UsQg',layers = [
+},mapbox_key = MAPBOX_TOKEN,layers = [
 pdk.Layer(
 "HexagonLayer",
 data = data[['date/time','latitude','longitude']],
