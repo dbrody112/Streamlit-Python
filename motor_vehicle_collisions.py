@@ -17,7 +17,7 @@ st.markdown("## This application is a Streamlit dashboard that can be used to"
 
 @st.cache(persist = True)
 def load_data(nrows):
-        data  = pd.read_csv("C:/Users/potat/Downloads/streamlitProj/Motor_Vehicle_Collisions_-_Crashes.csv", nrows = nrows, parse_dates = [['CRASH DATE','CRASH TIME']])
+        data  = pd.read_csv(DATA_URL, nrows = nrows, parse_dates = [['CRASH DATE','CRASH TIME']])
         data.dropna(subset = ['LATITUDE','LONGITUDE'], inplace = True)
         lowercase = lambda x: str(x).lower()
         data.rename(lowercase, axis = 'columns', inplace = True)
