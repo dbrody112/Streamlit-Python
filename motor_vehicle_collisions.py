@@ -7,7 +7,8 @@ import datetime as dt
 import pydeck as pdk
 import plotly.express as px
 
-DATA_URL =r"C:\Users\potat\Downloads\streamlitProj\Motor_Vehicle_Collisions_-_Crashes.csv"
+DATA_URL = DATA_LOCATION
+#Using dataset Motor_Vehicle_Collisions_-_Crashes.csv"
 
 
 st.title("Motor Vehicle Collisions in New York City")
